@@ -10,7 +10,7 @@ import os
 def init_driver(request):
     supported_browsers = ['chrome', 'ch', 'headlesschrome', 'firefox', 'ff', 'headlessfirefox']
 
-    browser = os.environ.get('BROWSER', 'headlesschrome')
+    browser = os.environ.get('BROWSER', 'chrome')
     if not browser:
         raise Exception("The environment variable 'BROWSER' must be set.")
 
@@ -35,6 +35,7 @@ def init_driver(request):
         ff_options.add_argument("--no-sandbox")
         ff_options.add_argument("--headless")
         driver = webdriver.Firefox(options=ff_options)
+
 
     request.cls.driver = driver
     yield

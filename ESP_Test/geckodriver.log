@@ -1,0 +1,72 @@
+1656664181907	geckodriver	INFO	Listening on 127.0.0.1:64796
+1656664184973	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64797" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\EXCEED\\AppData\\Local\\Temp\\rust_mozprofilev5FiA2"
+1656664185270	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:64797
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\EXCEED\\AppData\\Local\\Temp\\rust_mozprofilev5FiA2\\search.json.mozlz4", (void 0)))
+1656664186798	Marionette	INFO	Listening on port 64817
+DevTools listening on ws://localhost:64797/devtools/browser/1bae8670-983e-4b19-841d-c43ba90d98bd
+Read port: 64817
+1656664186886	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://qaesp.azurewebsites.net"
+1656664218623	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://idenedi-prod-stag.azurewebsites.net"
+1656664225869	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://idenedi-prod-stag.azurewebsites.net"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://qaesp.azurewebsites.net"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1656664229157	Marionette	INFO	Stopped listening on port 64817
+1656664229786	geckodriver	INFO	Listening on 127.0.0.1:64887
+1656664232853	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64888" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\EXCEED\\AppData\\Local\\Temp\\rust_mozprofileugmhfy"
+1656664233145	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:64888
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\EXCEED\\AppData\\Local\\Temp\\rust_mozprofileugmhfy\\search.json.mozlz4", (void 0)))
+1656664234820	Marionette	INFO	Listening on port 64907
+DevTools listening on ws://localhost:64888/devtools/browser/d57e1b53-b74d-401d-8fe7-b4c22cd1ea08
+Read port: 64907
+1656664234889	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://qaesp.azurewebsites.net"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://qaesp.azurewebsites.net"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1656664259836	Marionette	INFO	Stopped listening on port 64907
+1656677653321	geckodriver	INFO	Listening on 127.0.0.1:58303
+1656677656382	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58304" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\EXCEED\\AppData\\Local\\Temp\\rust_mozprofileuJYgT4"
+1656677656674	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:58304
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\EXCEED\\AppData\\Local\\Temp\\rust_mozprofileuJYgT4\\search.json.mozlz4", (void 0)))
+1656677658384	Marionette	INFO	Listening on port 58323
+DevTools listening on ws://localhost:58304/devtools/browser/240109b2-68d1-4907-bfd8-8073f6813a5b
+Read port: 58323
+1656677658487	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656677663887	Marionette	INFO	Stopped listening on port 58323
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1656677664202	geckodriver	INFO	Listening on 127.0.0.1:58347
+1656677667251	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58348" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\EXCEED\\AppData\\Local\\Temp\\rust_mozprofileIcDoa8"
+1656677667521	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:58348
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\EXCEED\\AppData\\Local\\Temp\\rust_mozprofileIcDoa8\\search.json.mozlz4", (void 0)))
+1656677668984	Marionette	INFO	Listening on port 58369
+Read port: 58369
+DevTools listening on ws://localhost:58348/devtools/browser/8df39cbd-453a-4287-a041-f9e8e7b6fe67
+1656677669035	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://qaesp.azurewebsites.net"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://qaesp.azurewebsites.net"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1656677704962	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1656677805502	Marionette	INFO	Stopped listening on port 58369
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."

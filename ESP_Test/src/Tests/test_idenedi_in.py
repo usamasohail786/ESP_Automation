@@ -3,7 +3,7 @@ import unittest
 from ddt import ddt, file_data
 import pytest
 from ESP_Test.src.pages.sign_in_idenendi import SignByIDendi
-
+from ESP_Test.src.dictionary import dictionary
 
 @pytest.mark.usefixtures("init_driver")
 @ddt
@@ -16,5 +16,8 @@ class TestSignByIDENEDI(unittest.TestCase):
         sign_in_idenedi_obj.sign_in_with_phone_number(phone_number)
         sign_in_idenedi_obj.sign_in_with_password(password_idenedi)
         sign_in_idenedi_obj.click_log_in_button()
-        body_text = sign_in_idenedi_obj.verify_by_text()
-        assert 'Enterprise Submission Platform' in body_text
+        value = sign_in_idenedi_obj.element_exist()
+        self.assertTrue(value, "Profile image exist so login successfully")
+
+
+

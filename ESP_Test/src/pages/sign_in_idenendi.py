@@ -2,12 +2,14 @@ from ESP_Test.src.pages.locators.sign_in_idendi_locators import SignByIDENEDILoc
 from ESP_Test.src.extended.extended import Extended
 from ESP_Test.src.helpers.config_helpers import get_base_url
 
+import time
 
 class SignByIDendi(SignByIDENEDILocators):
 
     def __init__(self, driver):
         self.driver = driver
         self.ex = Extended(self.driver)
+        self.elem_bool = False
 
     def url_call(self):
         base_url = get_base_url()
@@ -26,5 +28,9 @@ class SignByIDendi(SignByIDENEDILocators):
     def click_log_in_button(self):
         self.ex.wait_and_click(self.idendi_log_btn)
 
-    def verify_by_text(self):
-        return self.ex.wait_and_get_text(self.esp_text)
+    def element_exist(self):
+        self.ex.wait_until_element_is_visible(self.profile_img)
+        time.sleep(10)
+        if self.profile_img:
+            print("test........................")
+            import pbd; pbd.set_trace()

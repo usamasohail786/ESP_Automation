@@ -10,6 +10,7 @@ class Extended:
     def __init__(self, driver):
         self.driver = driver
         self.default_timeout = 100
+        self.elem_bool=False
 
     def wait_and_input_text(self, locator, text, timeout=None):
         timeout = timeout if timeout else self.default_timeout
@@ -31,18 +32,22 @@ class Extended:
             ).click()
 
     def wait_until_element_contains_text(self, locator, text, timeout=None):
-        timeout = timeout if timeout else self.default_timeout
-
+     timeout = timeout if timeout else self.default_timeout
+     try:
         WebDriverWait(self.driver, timeout).until(
             EC.text_to_be_present_in_element(locator, text)
         )
+     except TimeoutException:
+         raise TimeoutException(err)
 
-    def wait_until_element_is_visible(self, locator, timeout=None):
+
+    def wait_until_element_is_visible(self, locator,timeout=None):
         timeout = timeout if timeout else self.default_timeout
-
         WebDriverWait(self.driver, timeout).until(
             EC.visibility_of_element_located(locator)
+
         )
+
 
     def wait_and_get_elements(self, locator, timeout=None, err=None):
         timeout = timeout if timeout else self.default_timeout
